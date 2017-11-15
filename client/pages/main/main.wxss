@@ -1,0 +1,138 @@
+/* pages/main/main.wxss */
+swiper{
+  width: 100%;
+  height: 200px;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.adpath{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.adtext{
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: block;
+  color: white;
+  font-size: 16px;
+  line-height: 30px;
+  overflow: hidden;
+  text-indent: 1em;
+}
+.navmenu{
+  width: 100%;
+}
+.menu-list{
+  width: 25%;
+  height: 100px;
+  float: left;
+}
+.menu-nav{
+  width: 100%;
+  height: 100%;
+}
+.menu-img{
+  height: 110rpx;
+  width: 110rpx;
+  margin-left: 38.75rpx;
+  margin-top: 10px;
+}
+.menu-title{
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 5rpx;
+}
+.new-main{
+  padding: 0 10px;
+}
+.new-class{
+  height: 44px;
+}
+.new-class-title{
+  padding: 13px 0;
+  height: 18px;
+  
+}
+.title-left{
+  border-left: 10rpx solid red;
+  text-indent: 0.5em;
+  font-size: 18px;
+  line-height: 18px;
+  float: left;
+}
+.title-right{
+  float: right;
+  font-size: 16px;
+  color: #aaa;
+  line-height: 16px;
+}
+.new-class-main{
+  border-bottom: 1px solid #dadada;
+  padding: 15px 0;
+}
+.new-img{
+  height: 160rpx;
+  width: 160rpx;
+  float: left;
+}
+.new-info{
+  height: 160rpx;
+  margin-left: 180rpx;
+}
+.new-info-title{
+  height: 110rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 10rpx;
+  line-height: 36rpx;
+}
+.new-info-user{
+  font-size: 12px;
+  line-height: 40rpx;
+  color: #b4b4b4;
+  float: left;
+  max-width: 35%;
+  height: 20px;
+  overflow: hidden;
+}
+.new-info-date{
+  font-size: 12px;
+  line-height: 40rpx;
+  color: #b4b4b4;
+  float: left;
+  margin-left: 10rpx;
+}
+.new-info-comment{
+  font-size: 12px;
+  line-height: 40rpx;
+  color: #b4b4b4;
+  float: left;
+  margin-left: 10rpx;
+}
+.new-info-class{
+  font-size: 12px;
+  line-height: 28rpx;
+  padding: 2px;
+  border-radius: 3px;
+  color: skyblue;
+  border: 1px solid skyblue;
+  width: 2em;
+  float: right
+}
+.main-bottom{
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  color: #bababa;
+}

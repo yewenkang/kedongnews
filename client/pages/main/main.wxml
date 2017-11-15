@@ -1,0 +1,43 @@
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
+    <block wx:for="{{menudata.imgUrls}}">
+      <swiper-item>
+        <navigator class='adpath' url='{{item.url}}'>
+        <image src="{{item.imgpath}}" class="slide-image" width="355" height="150"/>
+        <text class='adtext'>{{item.title}}</text>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='navmenu'>
+    <view class='menu-list' wx:for='{{menudata.menu}}'>
+      <navigator class='menu-nav'>
+        <image class='menu-img' src="{{item.imgpath}}"/>
+        <text class='menu-title'>{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+  <view class='new-main'>
+    <view class='new-list' wx:for='{{menudata.news}}'>
+      <view class='new-class-title'>
+        <view class='title-left'>{{item.title}}</view>
+        <navigator class='title-right'>更多</navigator>
+      </view>
+      <view class='new-class-main' wx:for='{{item.news}}'>
+        <navigator class='new-nav'>
+          <image class='new-img' src='{{item.imgpath}}'></image>
+          <view class='new-info'>
+            <view class='new-info-title'>{{item.info}}</view>
+            <view class='new-info-user'>{{item.user}}</view>
+            <view class='new-info-date'>{{item.date}}</view>
+            <view class='new-info-comment'>评论{{item.comment}}</view>
+            <view class='new-info-class'>{{item.class}}</view>
+          
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='main-bottom'>---点击更多查看更多信息---</view>
+</view>

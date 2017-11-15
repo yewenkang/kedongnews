@@ -1,0 +1,33 @@
+<view class='container'>
+  <form bindsubmit="formSubmit">
+        <view class="row">
+            <text>标题：</text>
+            <input type="text" name="title" placeholder="请输入标题" />
+        </view>
+        <view class="row">
+            <text>内容：</text>
+            <input type="password" name="content" placeholder="请输入内容" />
+        </view>
+        <view class="row">
+            <text>图片：</text>
+            <input type="file" name="img" />
+        </view>
+        <view class="uploader">
+          <view class="uploader-text" bindtap="doUpload">
+              <text>上传图片</text>
+          </view>
+          <view class="uploader-container" wx:if="{{imgUrl}}">
+              <image
+                  class="uploader-image"
+                  src="{{imgUrl}}"
+                  mode="aspectFit"
+                  bindtap="previewImg"
+              ></image>
+        </view>
+    </view>
+        <view class="row">
+            <button type="primary" form-type="submit">登陆</button>
+        </view>
+    </form>
+    <view bindtap='qingqiu'>hahah</view>
+</view>

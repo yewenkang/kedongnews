@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/main/main",
+    "pages/index/index",
+    "pages/addCgi/addCgi",
+    "pages/shangchuan/shangchuan"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "克东新闻",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/main",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/shangchuan/shangchuan",
+        "text": "上传"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "测试"
+      }
+    ]
+  }
+}
