@@ -1,7 +1,7 @@
 <view class="container">
   <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular='{{circular}}'>
-    <block wx:for="{{menudata.imgUrls}}">
+    <block wx:for="{{menudata.imgUrls}}" wx:key='key'>
       <swiper-item>
         <navigator class='adpath' url='{{item.url}}'>
         <image src="{{item.imgpath}}" class="slide-image" width="355" height="150"/>
@@ -11,7 +11,7 @@
     </block>
   </swiper>
   <view class='navmenu'>
-    <view class='menu-list' wx:for='{{menudata.menu}}'>
+    <view class='menu-list' wx:for='{{menudata.menu}}' wx:key='key'>
       <navigator class='menu-nav'>
         <image class='menu-img' src="{{item.imgpath}}"/>
         <text class='menu-title'>{{item.title}}</text>
@@ -19,12 +19,12 @@
     </view>
   </view>
   <view class='new-main'>
-    <view class='new-list' wx:for='{{menudata.news}}'>
+    <view class='new-list' wx:for='{{menudata.news}}' wx:key='key'>
       <view class='new-class-title'>
         <view class='title-left'>{{item.title}}</view>
         <navigator class='title-right'>更多</navigator>
       </view>
-      <view class='new-class-main' wx:for='{{item.news}}'>
+      <view class='new-class-main' wx:for='{{item.news}}' wx:key='key'>
         <navigator class='new-nav'>
           <image class='new-img' src='{{item.imgpath}}'></image>
           <view class='new-info'>
